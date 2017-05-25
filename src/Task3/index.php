@@ -2,9 +2,12 @@
     require __DIR__ . '/../../vendor/autoload.php';
 
     use BinaryStudioAcademy\Task3\PokemonPresenter;
+    use BinaryStudioAcademy\Task1\Pickachu;
+    use BinaryStudioAcademy\Task1\Psyduck;
+    use BinaryStudioAcademy\Task1\Slowpoke;
+    use BinaryStudioAcademy\Task1\Bulbasaur;
 
-    // Good idea is to put your pokemons you implemented before here:
-    $pokemons = [];
+    $pokemons = [new Pickachu, new Psyduck, new Slowpoke, new Bulbasaur];
 ?>
 
 <!doctype html>
@@ -17,7 +20,6 @@
     <title>Built-in Web Server</title>
 </head>
 <body>
-    <!--Implement your task below-->
     <?php echo (new PokemonPresenter($pokemons))->present(); ?>
 </body>
 </html>
