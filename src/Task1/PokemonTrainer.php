@@ -6,8 +6,10 @@ class PokemonTrainer
 {
     public function pick(Pokemon $pokemon): string
     {
-        //TODO: implement
+        $pokemonNameSpace = get_class($pokemon);
+        $pokemonNameSpaceParts = explode('\\', $pokemonNameSpace);
+        $pokemonName = end($pokemonNameSpaceParts);
 
-        return '';
+        return $pokemonName . ": " . $pokemon->battleCry();
     }
 }
