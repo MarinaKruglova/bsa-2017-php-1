@@ -6,6 +6,11 @@ class EmojiGenerator
 {
     public function generate()
     {
-        //TODO: Implement emoji generator using yield
+        $emojis = array('😀', '😃', '😄', '😁', '😆', '😅', '😂');
+
+        foreach($emojis as $emoji)
+        {
+            yield $emoji;
+        }
     }
 }
