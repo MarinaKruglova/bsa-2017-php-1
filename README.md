@@ -53,7 +53,7 @@ Pickachu: Pika-Pika!
 
 | Pokemon   | Battlecry    | Image                                           |
 |-----------|--------------|-------------------------------------------------|
-| Pikachu   | Pika-Pika!   | https://img.pokemondb.net/artwork/pikachu.jpg   |
+| Pickachu  | Pika-Pika!   | https://img.pokemondb.net/artwork/pikachu.jpg   |
 | Bulbasaur | Bool bool!   | https://img.pokemondb.net/artwork/bulbasaur.jpg |
 | Psyduck   | PSY!PSY!PSY! | https://img.pokemondb.net/artwork/psyduck.jpg   |
 | Slowpoke  | So slow!     | https://img.pokemondb.net/artwork/slowpoke.jpg  |
@@ -94,14 +94,14 @@ Pickachu: Pika-Pika!
 Если вы используете Homestead, то для начала нужно остановить `nginx`.
 
 ```shell
-sudo pkill nginx
+sudo service nginx stop
 ```
 Затем запустить встроенный веб-сервер:
 
 ```
-php -S 0.0.0.0:80 -t .
+php -S 0.0.0.0:8000 -t .
 ```
-Мoжет потребоваться команда "sudo php -S 0.0.0.0:80 -t .".
+Мoжет потребоваться команда "sudo php -S 0.0.0.0:8000 -t .".
 
 Страница будет доступна в браузере по адресу:  
 
